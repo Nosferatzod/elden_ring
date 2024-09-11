@@ -1,0 +1,173 @@
+/* Importação de Fontes */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0; /* Cor do texto clara para contraste com o fundo escuro */
+    position: relative; /* Necessário para o posicionamento dos elementos */
+    background: black; /* Fundo padrão para garantir que não haja problemas se o vídeo falhar */
+}
+
+/* Estilos do Vídeo de Fundo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+/* Estilos da Música de Fundo */
+#background-music {
+    display: none; /* Oculta o elemento de áudio */
+}
+
+/* Estilos do Cabeçalho */
+.header {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro e semitransparente para o cabeçalho */
+    color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Garante que o cabeçalho esteja acima do conteúdo */
+}
+
+.header .logo img {
+    height: 60px; /* Ajuste a altura do logo conforme necessário */
+}
+
+.nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos das Seções */
+.section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para contraste com o fundo do vídeo */
+    margin: 80px 0; /* Margem superior para não sobrepor o cabeçalho fixo */
+}
+
+/* Estilos da Seção Intro */
+.intro h2 {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Estilos da Seção de Conteúdo */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    background-color: #2b2b2b; /* Cor de fundo das caixas de conteúdo */
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #555; /* Borda para destacar as caixas */
+}
+
+.box h3 {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 22px;
+}
+
+/* Estilos da Seção de Catálogo */
+.catalog {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para contraste com o fundo do vídeo */
+}
+
+.catalog h2 {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.catalog-item {
+    background-color: #3b3b3b; /* Cor de fundo das caixas de catálogo */
+    padding: 20px;
+    flex: 1;
+    border: 1px solid #555; /* Borda para destacar as caixas */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona transições suaves */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha itens ao centro */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.catalog-item:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra para destacar a caixa */
+}
+
+.catalog-link {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.catalog-icon {
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+    margin-bottom: 10px; /* Espaço entre ícone e texto */
+}
+
+.catalog-link h3 {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.catalog-link p {
+    margin: 10px 0 0;
+}
+
+/* Estilos do Rodapé */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro e semitransparente para o rodapé */
+    color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Garante que o rodapé esteja acima de outros conteúdos, se necessário */
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
